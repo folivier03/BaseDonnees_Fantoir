@@ -1,0 +1,1 @@
+sqlplus system/saasystem@saa @create_fantoir_schema.sql
