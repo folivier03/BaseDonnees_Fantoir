@@ -1,7 +1,11 @@
-package com.fantoir.sqlite.SQLiteDialect;
+package com.fantoir.sqlite;
 
 import org.hibernate.dialect.Dialect;
+// import com.hibernate.dialect.identity.IdentityColumnSupport;
+import com.fantoir.demo.SQLiteIdentityColumnSupport;
+
 import org.hibernate.dialect.identity.IdentityColumnSupport;
+import org.hibernate.dialect.Dialect;
 
 import java.sql.Types;
 

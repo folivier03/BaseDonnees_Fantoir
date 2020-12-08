@@ -1,3 +1,8 @@
+package com.fantoir.demo;
+
+import org.hibernate.MappingException;
+import org.hibernate.dialect.identity.IdentityColumnSupportImpl;
+
 public class SQLiteIdentityColumnSupport extends IdentityColumnSupportImpl {
 
     @Override
