@@ -1,6 +1,6 @@
 package com.fantoir.projet.dao;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -9,14 +9,20 @@ import com.fantoir.projet.model.Adresse;
 import org.springframework.stereotype.Repository;
 
 @Repository("fakeDao")
-public class FakeAdresseDataAccessService implements AdresseDao {
+public class FakeAdresseDataAccessService implements IAdresseDao {
 
-    private static List<Adresse> DB = new ArrayList<>();
+    private static List<Adresse> DB = Arrays.asList(
+        new Adresse(UUID.randomUUID(), "Patrick"),
+        new Adresse(UUID.randomUUID(), "Benjamin"),
+        new Adresse(UUID.randomUUID(), "Hector"),
+        new Adresse(UUID.randomUUID(), "Romain")
+    );
 
     @Override
-    public int addAdresse(UUID id, Adresse adresse) {
-        DB.add(new Adresse(id, adresse.getName()));
-        return 1;
+    public List<Adresse> selectAllAdresse() {
+        return DB;
     }
+
+    
     
 }
