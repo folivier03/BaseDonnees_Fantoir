@@ -7,9 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 public interface AdressRepository extends CrudRepository<Adresse, String> {
-
-	
-
 	
     @Query(value = "select * from Adresse where id_voie = :idVoie", nativeQuery = true)
     Adresse findByIdVoie(@Param("idVoie") String idVoie);

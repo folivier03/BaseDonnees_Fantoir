@@ -5,6 +5,7 @@ import javax.persistence.Id;
 
 /**
  * Created by Mohamed 
+ * Modified by NicolasM
  */
 
 @Entity

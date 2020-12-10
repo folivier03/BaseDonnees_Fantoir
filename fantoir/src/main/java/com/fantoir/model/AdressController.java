@@ -1,13 +1,6 @@
-package com.fantoir.fantoir.model;
+package com.fantoir.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
-// import java.io.File;
-// import java.io.IOException;
-
-// import com.fasterxml.jackson.core.JsonGenerationException;
-// import com.fasterxml.jackson.databind.JsonMappingException;
-// import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-// import com.fantoir.fantoir.model.Adresse;
-// import java.util.Dictionary;
 
 @RestController
 @RequestMapping(value = "/api/v1/adresse", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -28,8 +19,6 @@ public class AdressController {
     
     @Autowired
     private AdressService adressService;
-
-    
 
     @GetMapping(value = { "", "/" })
     public List<Adresse> getAllAdress() {
