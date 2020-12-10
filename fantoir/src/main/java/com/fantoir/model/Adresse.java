@@ -1,4 +1,4 @@
-package com.fantoir.fantoir.model;
+package com.fantoir.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
