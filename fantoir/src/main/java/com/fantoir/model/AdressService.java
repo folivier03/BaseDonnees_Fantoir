@@ -31,7 +31,7 @@ public class AdressService {
         return adressRepository.findByIdVoie(id);
     }
     public List<Adresse> findAll(){
-        return  (List<Adresse>) adressRepository.findAll();
+        return (List<Adresse>) adressRepository.findAll();
     }
 
     public Adresse getById(String id){
