@@ -67,6 +67,7 @@ Vous pouvez a present faire des requetes sur [localhost:8080/api/v1/adresse](htt
 ### getAll
 GET
 /api/v1/adresse/
+> Attention il existe 127k adresses en base de donnees
 
 ### getById
 GET
